@@ -1,6 +1,6 @@
 {
   "name": "lorenz-curve",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Get the lorenz curve of a given data set.",
   "main": "dist/library.min.js",
   "scripts": {
