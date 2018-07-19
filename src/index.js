@@ -18,21 +18,21 @@ export default (data, precision = 2) => {
   // Data size
   const amount = size(sorted)
 
-  // Cummulate the data
-  const added = reduce(sorted, (cummulated, current, key) => {
+  // Accumulate the data
+  const added = reduce(sorted, (accumulated, current, key) => {
     // First value is always first value of data
     if (key === 0) {
-      cummulated.push(head(sorted))
-    } else cummulated.push(current + last(cummulated))
+      accumulated.push(head(sorted))
+    } else accumulated.push(current + last(accumulated))
 
-    return cummulated
+    return accumulated
   }, [])
 
-  // Cummulative result
+  // Accumulated result
   const max = last(added)
-  // Value ratio of data
+  // Value ratios of data
   let ratios = []
-  // Ratio regarding max value
+  // Ratios regarding max value
   let percentages = []
   each(added, (value, index) => {
     percentages.push(round(value / max, precision))
