@@ -2,17 +2,19 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const path = require('path')
 
 let plugins = []
+let mode = process.env.NODE_ENV === 'production' ? 'production' : 'development'
 
 const config = {
   entry: `${__dirname}/src/index.js`,
-  mode: 'development',
+  mode,
   devtool: 'source-map',
   output: {
     path: `${__dirname}/dist`,
     filename: 'library.min.js',
     library: 'library',
     libraryTarget: 'umd',
-    umdNamedDefine: true
+    umdNamedDefine: true,
+    globalObject: 'this'
   },
 
   optimization: {
@@ -25,7 +27,6 @@ const config = {
           ecma: 6,
           mangle: true
         },
-
         sourceMap: false
       })
     ]
