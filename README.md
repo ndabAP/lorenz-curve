@@ -11,7 +11,7 @@ npm install lorenz-curve --save
 | Parameter   | Type              | Description                       |
 |-------------|-------------------|-----------------------------------|
 | `data`      | `[]`              | Data set                          |
-| `precision` | `Number`          | Precision for ratios (default: 2  |
+| `precision` | `Number`          | Precision for ratios (default: 2) |
 
 ## Usage
 
