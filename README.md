@@ -8,10 +8,10 @@ npm install lorenz-curve --save
 ## API
 ### `lorenzCurve(data: [], precision: Number)`
 
-| Parameter   | Type              | Description               |
-|-------------|-------------------|---------------------------|
-| `data`      | `[]`              | Data set                    |
-| `precision` | `Number`          | Precision for ratios      |
+| Parameter   | Type              | Description                       |
+|-------------|-------------------|-----------------------------------|
+| `data`      | `[]`              | Data set                          |
+| `precision` | `Number`          | Precision for ratios (default: 2  |
 
 ## Usage
 
