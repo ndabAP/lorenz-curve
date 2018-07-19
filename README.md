@@ -6,11 +6,11 @@ npm install lorenz-curve --save
 ```
 
 ## API
-### `lorenzCurve(data: [], precision: Number)`
+### `lorenzCurve(data: Number[], precision: Number)`
 
 | Parameter   | Type              | Description                       |
 |-------------|-------------------|-----------------------------------|
-| `data`      | `[]`              | Data set                          |
+| `data`      | `Number[]`        | Data set                          |
 | `precision` | `Number`          | Precision for ratios (default: 2) |
 
 ## Usage

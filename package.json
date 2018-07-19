@@ -1,10 +1,10 @@
 {
   "name": "lorenz-curve",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Get the lorenz curve of a given data set.",
   "main": "dist/library.min.js",
   "scripts": {
-    "build": "NODE_ENV=production npm run test && webpack",
+    "build": "npm run test && NODE_ENV=production webpack",
     "dev": "webpack --watch",
     "test": "mocha --require @babel/register --colors ./test/*.spec.js",
     "test:watch": "mocha --require @babel/register --colors -w ./test/*.spec.js"
