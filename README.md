@@ -1,4 +1,4 @@
-# Lorenz curve
+# lorenz-curve
 
 ## Installation
 ```
