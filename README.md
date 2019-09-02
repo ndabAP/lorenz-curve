@@ -1,4 +1,4 @@
-# lorenz-curve
+# NOT MAINTAINED lorenz-curve
 
 ## Installation
 ```
